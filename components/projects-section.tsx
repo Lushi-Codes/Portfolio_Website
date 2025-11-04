@@ -19,10 +19,12 @@ export function ProjectsSection() {
     },
     {
       title: "DentalFix Dental Clinic Appointment System",
-      description: "DentalFix Dental Clinic is a system developed for our client to boost online engagement, streamline appointment scheduling, and protect the privacy of patients’ records. The system was fully functional and in use, though unfortunately, the version previously hosted on GitHub has been deleted. Despite this, the project demonstrates our ability to create practical, client-focused solutions that enhance both business operations and user experience.",
+      description:
+        "DentalFix Dental Clinic is a system developed for our client to boost online engagement, streamline appointment scheduling, and protect the privacy of patients' records. The system was fully functional and in use, though unfortunately, the version previously hosted on GitHub has been deleted. Despite this, the project demonstrates our ability to create practical, client-focused solutions that enhance both business operations and user experience.",
       image: "/dentalfix-clinic-website.png",
-      technologies: ["NextJS", "MongoDB", "TypeScript", "Vsiual Studio Code", "Figma"],
-      liveUrl: "https://www.figma.com/proto/IaUwll2Kw7e1OBR75OvYhT/Entech-Proto--Copy-?node-id=0-1&t=HpJcazH6pPIcjlth-1",
+      technologies: ["Next.js", "MongoDB", "TypeScript", "Visual Studio Code", "Figma", "GitHub"],
+      liveUrl:
+        "https://www.figma.com/proto/IaUwll2Kw7e1OBR75OvYhT/Entech-Proto--Copy-?node-id=0-1&t=HpJcazH6pPIcjlth-1",
     },
   ]
 
@@ -36,7 +38,7 @@ export function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card
               key={index}
@@ -49,18 +51,19 @@ export function ProjectsSection() {
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {project.liveUrl !== "#" && (
+                {project.liveUrl && (
+                  <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Button
                       size="sm"
                       variant="secondary"
                       className="bg-white/90 hover:bg-white"
                       onClick={() => window.open(project.liveUrl, "_blank")}
                     >
-                      <ExternalLink className="h-4 w-4" />
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      View Live
                     </Button>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-card-foreground mb-2">{project.title}</h3>

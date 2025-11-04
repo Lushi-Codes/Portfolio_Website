@@ -11,7 +11,7 @@ export function ExperienceSection() {
     {
       title: "Video and Photo Editor",
       company: "Dronegenuity",
-      period: "February 2025 - Present",
+      period: "February 2025 - November 2025",
       description: "While working at Dronegenuity, I supported myself financially and continued growing my programming skills. At the same time, I explored photo and video editing, where I learned practical techniques to create content more efficiently and effectively.",
       technologies: ["Adobe After Effects", "Adobe Photoshop", "Lightroom", "AI Text-to-Speech"],
       achievements: [
@@ -34,13 +34,27 @@ export function ExperienceSection() {
     {
       title: "Teaching Assistant",
       company: "University of Baguio",
-      period: "2023 - 2025",
+      period: "August 2023 - May 2025",
       description:
         "Assisted students in programming courses such as Introduction to PHP, Java, and Algorithm Structures",
-      technologies: ["Java", "PHP", "Algorithm Structuress", "Database (SQL)"],
+      technologies: ["Java", "PHP", "Algorithm Structures", "Database (SQL)"],
       achievements: [
         "Helped freshmen students improve their understandings",
         "Received excellent feedback from students",
+      ],
+    },
+    {
+      title: "Student Administrative Assistant",
+      company: "University of Baguio",
+      period: "August 2022 - May 2025",
+      description:
+        "Assisted students and parents by providing accurate information about school programs, requirements, and department services. Supported faculty with managing schedules, appointments, and event coordination to ensure smooth academic operations. Also helped maintain organized student records and departmental files, improving accessibility and workflow efficiency.",
+      technologies: ["Microsoft Office Suite", "Google Workspace"],
+      achievements: [
+        "Provided timely and accurate information to over 100 students and parents each semester",
+        "Assisted in coordinating faculty schedules and department events efficiently",
+        "Helped streamline appointment scheduling and record management",
+        "Received consistent positive feedback from students and faculty for reliability and professionalism"
       ],
     },
   ]

@@ -9,7 +9,7 @@ export function SkillsSection() {
   const skills = [
     {
       category: "Frontend",
-      technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Bootsstrap"],
       icon: "💻",
     },
     {
@@ -31,6 +31,16 @@ export function SkillsSection() {
       category: "Game Development",
       technologies: ["Unreal Engine 5 (Blueprint)", "Blender", "Adobe Illustrator"],
       icon: "🎮",
+    },
+    {
+      category: "Video and Photo Editing",
+      technologies: ["Adobe Premiere", "Adobe After Effects", "Adobe Photoshop", "Adobe Lightroom"],
+      icon: "🎨",
+    },
+    {
+      category: "Office Productivity Software & Collaboration Tools",
+      technologies: ["Microsoft Office Suites", "Google Workspace", "Salesforce", "Jira", "Slack", "Discord"],
+      icon: "💼",
     },
   ]
 

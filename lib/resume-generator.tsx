@@ -36,7 +36,14 @@ export function generateResumeHTML(): string {
             font-size: 2.5em;
             font-weight: bold;
             color: #1e40af;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 1.2em;
+            color: #374151;
             margin-bottom: 10px;
+            font-weight: 600;
         }
         
         .contact-info {
@@ -66,18 +73,23 @@ export function generateResumeHTML(): string {
             line-height: 1.7;
         }
         
-        .competencies {
+        .expertise-list, .achievement-list, .language-list, .certification-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 10px;
             margin-bottom: 15px;
         }
         
-        .competency {
+        .expertise-item, .achievement-item, .language-item, .certification-item {
             background: #f8fafc;
             padding: 8px 12px;
             border-left: 3px solid #3b82f6;
             font-size: 0.9em;
+        }
+        
+        .achievement-item {
+            grid-column: 1 / -1;
+            text-align: justify;
         }
         
         .experience-item, .education-item, .extracurricular-item {
@@ -105,7 +117,7 @@ export function generateResumeHTML(): string {
             margin-bottom: 10px;
         }
         
-        .description {
+        .description, .details {
             text-align: justify;
             line-height: 1.6;
         }
@@ -166,11 +178,12 @@ export function generateResumeHTML(): string {
 <body>
     <div class="header">
         <div class="name">${resumeData.personalInfo.name}</div>
-        <div class="contact-info">
-            ${resumeData.personalInfo.phone} · ${resumeData.personalInfo.email} · ${resumeData.personalInfo.portfolio}
-        </div>
+        <div class="title">${resumeData.personalInfo.title}</div>
         <div class="contact-info">
             ${resumeData.personalInfo.location}
+        </div>
+        <div class="contact-info">
+            ${resumeData.personalInfo.phone} | ${resumeData.personalInfo.email} | ${resumeData.personalInfo.portfolio}
         </div>
     </div>
 
@@ -180,9 +193,16 @@ export function generateResumeHTML(): string {
     </div>
 
     <div class="section">
-        <div class="section-title">Key Competencies</div>
-        <div class="competencies">
-            ${resumeData.keyCompetencies.map((comp) => `<div class="competency">${comp}</div>`).join("")}
+        <div class="section-title">Area of Expertise</div>
+        <div class="expertise-list">
+            ${resumeData.areaOfExpertise.map((item) => `<div class="expertise-item">${item}</div>`).join("")}
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Key Achievements</div>
+        <div class="achievement-list">
+            ${resumeData.keyAchievements.map((achievement) => `<div class="achievement-item">${achievement}</div>`).join("")}
         </div>
     </div>
 
@@ -203,7 +223,7 @@ export function generateResumeHTML(): string {
     </div>
 
     <div class="section">
-        <div class="section-title">Education & Certifications</div>
+        <div class="section-title">Education</div>
         ${resumeData.education
           .map(
             (edu) => `
@@ -211,6 +231,7 @@ export function generateResumeHTML(): string {
                 <div class="job-title">${edu.degree}</div>
                 <div class="company">${edu.institution}</div>
                 <div class="duration">${edu.duration}</div>
+                ${edu.details ? `<div class="details">${edu.details}</div>` : ""}
             </div>
         `,
           )
@@ -218,19 +239,36 @@ export function generateResumeHTML(): string {
     </div>
 
     <div class="section">
-        <div class="section-title">Extracurricular Activities</div>
-        ${resumeData.extracurricular
-          .map(
-            (ext) => `
-            <div class="extracurricular-item">
-                <div class="job-title">${ext.role}</div>
-                <div class="company">${ext.organization}</div>
-                <div class="company">${ext.institution}</div>
-                <div class="duration">${ext.duration}</div>
+        <div class="section-title">Additional Information</div>
+        
+        <div style="margin-bottom: 20px;">
+            <div style="font-weight: bold; color: #1e40af; margin-bottom: 10px;">Languages</div>
+            <div class="language-list">
+                ${resumeData.languages.map((lang) => `<div class="language-item">${lang}</div>`).join("")}
             </div>
-        `,
-          )
-          .join("")}
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <div style="font-weight: bold; color: #1e40af; margin-bottom: 10px;">Certifications</div>
+            <div class="certification-list">
+                ${resumeData.certifications.map((cert) => `<div class="certification-item">${cert}</div>`).join("")}
+            </div>
+        </div>
+
+        <div>
+            <div style="font-weight: bold; color: #1e40af; margin-bottom: 10px;">Extra Curricular Activities</div>
+            ${resumeData.extracurricular
+              .map(
+                (ext) => `
+                <div class="extracurricular-item">
+                    <div class="job-title">${ext.role}</div>
+                    <div class="company">${ext.organization}</div>
+                    <div class="duration">${ext.duration}</div>
+                </div>
+            `,
+              )
+              .join("")}
+        </div>
     </div>
 
     <div class="section">

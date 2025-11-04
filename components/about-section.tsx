@@ -40,7 +40,7 @@ export function AboutSection() {
                 <GraduationCap className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-card-foreground mb-2">Education</h3>
                 <p className="text-sm text-muted-foreground">Computer Science Major</p>
-                <p className="text-sm text-muted-foreground">Expected 2025</p>
+                <p className="text-sm text-muted-foreground">Graduated 2025</p>
               </CardContent>
             </Card>
 
@@ -50,8 +50,8 @@ export function AboutSection() {
               <CardContent className="p-6 text-center">
                 <Code className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-card-foreground mb-2">Coding</h3>
-                <p className="text-sm text-muted-foreground">1+ Year</p>
-                <p className="text-sm text-muted-foreground">Experience</p>
+                <p className="text-sm text-muted-foreground">3+ Years</p>
+                <p className="text-sm text-muted-foreground">Experience Academically</p>
               </CardContent>
             </Card>
 
