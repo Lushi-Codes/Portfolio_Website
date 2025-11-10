@@ -34,7 +34,6 @@ export function HeroSection() {
             <div
               className={`flex flex-col sm:flex-row gap-4 animate-on-scroll ${heroVisible ? "visible animate-fade-up animate-delay-200" : ""}`}
             >
-            
               <Button
                 variant="outline"
                 size="lg"
@@ -49,15 +48,15 @@ export function HeroSection() {
             <div
               className={`flex gap-8 pt-8 animate-on-scroll ${heroVisible ? "visible animate-fade-up animate-delay-400" : ""}`}
             >
-              <div>
-                <div className="text-3xl font-bold text-[var(--color-hero-accent)]">2</div>
-                <div className="text-[var(--color-hero-text-muted)] text-sm">Projects</div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[var(--color-hero-accent)]">5+</div>
+                <div className="text-[var(--color-hero-text-muted)] text-sm">Programming Projects</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-[var(--color-hero-accent)]">1+</div>
-                <div className="text-[var(--color-hero-text-muted)] text-sm">Years Experience</div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-[var(--color-hero-accent)]">100+</div>
+                <div className="text-[var(--color-hero-text-muted)] text-sm">Media Projects</div>
               </div>
-               <div>
+              <div className="text-center">
                 <div className="text-3xl font-bold text-[var(--color-hero-accent)]">10+</div>
                 <div className="text-[var(--color-hero-text-muted)] text-sm">Technologies</div>
               </div>

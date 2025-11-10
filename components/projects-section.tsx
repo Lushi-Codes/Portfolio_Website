@@ -10,7 +10,7 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: "DIWA: Divine Wars",
+      title: "DIWA: Divine Wars. A Real-time Strategy Game Based on Phillippine Mythology (2025)",
       description:
         "Divine Wars (DIWA) is a real-time strategy (RTS) game inspired by Philippine mythology, developed as our thesis project. In the game, players must defend their land against the evil god Sitan. What makes this project especially meaningful is that our team started with no prior experience in game development. Over the course of a single semester, we dove into learning the fundamentals of RTS gameplay, and managed to implement core mechanics, create animations, add visual effects, and even design a unique gameplay mode. The project became not just a game, but a testament to our dedication, creativity, and ability to learn and adapt under tight deadlines.",
       image: "/retro-sunburst-illustration.jpg",
@@ -18,13 +18,22 @@ export function ProjectsSection() {
       liveUrl: "https://jdkepler0115.itch.io/divine-wars",
     },
     {
-      title: "DentalFix Dental Clinic Appointment System",
+      title: "DentalFix Dental Clinic Appointment System (2024)",
       description:
-        "DentalFix Dental Clinic is a system developed for our client to boost online engagement, streamline appointment scheduling, and protect the privacy of patients' records. The system was fully functional and in use, though unfortunately, the version previously hosted on GitHub has been deleted. Despite this, the project demonstrates our ability to create practical, client-focused solutions that enhance both business operations and user experience.",
+        "DentalFix Dental Clinic is a web-based system developed for a client to boost online engagement, streamline appointment scheduling, and ensure patient data privacy. The system features appointment booking and rescheduling, CRUD operations for managing patients, services, and staff records, and a report generator for tracking daily appointments and clinic performance. It also integrates various APIs such as a calendar API for real-time scheduling, a payment gateway API for secure online transactions, and an SMS reminder API to notify patients of upcoming appointments. The project was fully documented with both a Software Requirements Specification (SRS) and a Software Design Document (SDD) detailing its architecture, database schema, and user flow. Although the original version previously hosted on GitHub has since been deleted by our project manager, the project demonstrates our ability to design, document, and develop practical, client-focused systems that enhance operational efficiency and user experience.",
       image: "/dentalfix-clinic-website.png",
       technologies: ["Next.js", "MongoDB", "TypeScript", "Visual Studio Code", "Figma", "GitHub"],
       liveUrl:
         "https://www.figma.com/proto/IaUwll2Kw7e1OBR75OvYhT/Entech-Proto--Copy-?node-id=0-1&t=HpJcazH6pPIcjlth-1",
+    },
+    {
+      title: "Movie Rental System (2019)",
+      description:
+        "Movie Rental System was developed collaboratively by myself, Mr. Fagyan, and Ms. Tomelden as our final database project. The system was built in Microsoft Visual Studio using the C# language and the ASP.NET framework, with the database managed in MySQL (XAMPP) as required for the course. It was deployed locally for testing and demonstration purposes, with Google Drive used for version control before we were introduced to GitHub. The system features three user roles — Admin, Staff, and User — each with unique interfaces and access permissions. Core functionalities include borrowing and returning movies, real-time stock availability, and an integrated payment system. Additional features such as searching, browsing, and filtering improve usability and streamline the rental process.",
+      image: "/MovieRental.png",
+      technologies: ["C#", "Microsoft Visual Studio", "MySQL XAMPP", "Google Drive", "Bootstrap"],
+      liveUrl:
+        "https://drive.google.com/drive/folders/17Axq8KPV_PXGz-0iyWVzRa22NW9DhjsI?usp=sharing",
     },
   ]
 
@@ -32,7 +41,7 @@ export function ProjectsSection() {
     <section id="projects" className="py-20" ref={projectsRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 animate-on-scroll ${projectsVisible ? "visible animate-fade-up" : ""}`}>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Featured Projects</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Featured Programming Projects</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             These projects were developed during my university years.
           </p>
@@ -56,7 +65,7 @@ export function ProjectsSection() {
                     <Button
                       size="sm"
                       variant="secondary"
-                      className="bg-white/90 hover:bg-white"
+                      className="bg-black/90 hover:bg-gray gap-2 cursor-pointer"
                       onClick={() => window.open(project.liveUrl, "_blank")}
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />

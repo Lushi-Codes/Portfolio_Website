@@ -15,6 +15,7 @@ export function Navigation() {
     { name: "Work Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Multi Media", href: "#media" },
   ]
 
   return (

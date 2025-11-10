@@ -33,11 +33,6 @@ export function SkillsSection() {
       icon: "🎮",
     },
     {
-      category: "Video and Photo Editing",
-      technologies: ["Adobe Premiere", "Adobe After Effects", "Adobe Photoshop", "Adobe Lightroom"],
-      icon: "🎨",
-    },
-    {
       category: "Office Productivity Software & Collaboration Tools",
       technologies: ["Microsoft Office Suites", "Google Workspace", "Salesforce", "Jira", "Slack", "Discord"],
       icon: "💼",

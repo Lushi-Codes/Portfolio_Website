@@ -13,7 +13,7 @@ export function ExperienceSection() {
       company: "Dronegenuity",
       period: "February 2025 - November 2025",
       description: "While working at Dronegenuity, I supported myself financially and continued growing my programming skills. At the same time, I explored photo and video editing, where I learned practical techniques to create content more efficiently and effectively.",
-      technologies: ["Adobe After Effects", "Adobe Photoshop", "Lightroom", "AI Text-to-Speech"],
+      technologies: ["Adobe After Effects", "Adobe Photoshop", "Lightroom", "AI Text-to-Speech", "SalesForce"],
       achievements: [
         "Improved editing performance for about 40-50%",
         "Successfully produced over 100+ client videos, improving audience engagement and helping Dronegenuity deliver consistent, brand-aligned content on time.",
@@ -25,7 +25,7 @@ export function ExperienceSection() {
       period: "Part-time, December 2022 - July 2025",
       description:
         "As a part-time Video Editor at Blox Labs, I edited and produced videos that matched the client's vision and brand. I added effects, transitions, and graphics to make the videos more engaging. I worked with the team on ideas, managed deadlines, and turned raw footage into polished, professional content.",
-      technologies: ["Adobe After Effects", "Adobe Photoshop", "AI Text-to-Speech"],
+      technologies: ["Adobe After Effects", "Adobe Photoshop", "AI Text-to-Speech", "Discord", "Zoom"],
       achievements: [
         "Introduced creative use of AI text-to-speech, which reduced production turnaround by 40%",
         "Successfully produced over 50 client videos, improving audience engagement and helping Blox Labs deliver consistent, brand-aligned content on time.",
