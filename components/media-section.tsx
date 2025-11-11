@@ -34,7 +34,7 @@ export function MediaSection() {
     },
     {
       title: "Social Media Manager",
-      category: "Photo & Video Editing",
+      category: "Photo & Video Editing with Videography & Photography",
       description:
         "Documented and covered various university events as the Public Relations Officer of the School of Information Technology. Created press releases, social media content, and visual materials to promote departmental activities and student achievements. Collaborated with faculty and student organizations to ensure timely communication and publication. Represented the department in several university-wide video editing competitions, winning multiple awards for creativity and storytelling.",
       image: "/SAC.jpg",

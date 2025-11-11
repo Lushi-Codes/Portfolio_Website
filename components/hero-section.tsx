@@ -50,7 +50,7 @@ export function HeroSection() {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold text-[var(--color-hero-accent)]">5+</div>
-                <div className="text-[var(--color-hero-text-muted)] text-sm">Programming Projects</div>
+                <div className="text-[var(--color-hero-text-muted)] text-sm">Academic Projects</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-[var(--color-hero-accent)]">100+</div>

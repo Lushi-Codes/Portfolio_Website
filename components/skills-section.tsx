@@ -9,12 +9,12 @@ export function SkillsSection() {
   const skills = [
     {
       category: "Frontend",
-      technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Bootsstrap"],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Bootsstrap"],
       icon: "💻",
     },
     {
       category: "Backend",
-      technologies: ["Laravel (PHP)", "ASP.NET (C#)", "PostgreSQL"],
+      technologies: ["Laravel (PHP)", "ASP.NET (C#)", "PostgreSQL", "Javascript (Next.js)"],
       icon: "⚙️",
     },
     {
@@ -24,7 +24,7 @@ export function SkillsSection() {
     },
     {
       category: "Languages",
-      technologies: ["JavaScript", "Python", "Java", "C#"],
+      technologies: ["JavaScript", "Python (Basic)", "Java", "C#"],
       icon: "🔤",
     },
     {
