@@ -19,18 +19,7 @@ export function ExperienceSection() {
         "Successfully produced over 100+ client videos, improving audience engagement and helping Dronegenuity deliver consistent, brand-aligned content on time.",
       ],
     },
-    {
-      title: "Part-time Video Editor",
-      company: "Blox Labs Media",
-      period: "Part-time, December 2022 - July 2025",
-      description:
-        "As a part-time Video Editor at Blox Labs, I edited and produced videos that matched the client's vision and brand. I added effects, transitions, and graphics to make the videos more engaging. I worked with the team on ideas, managed deadlines, and turned raw footage into polished, professional content.",
-      technologies: ["Adobe After Effects", "Adobe Photoshop", "AI Text-to-Speech", "Discord", "Zoom"],
-      achievements: [
-        "Introduced creative use of AI text-to-speech, which reduced production turnaround by 40%",
-        "Successfully produced over 50 client videos, improving audience engagement and helping Blox Labs deliver consistent, brand-aligned content on time.",
-      ],
-    },
+  
     {
       title: "Teaching Assistant",
       company: "University of Baguio",
@@ -41,6 +30,18 @@ export function ExperienceSection() {
       achievements: [
         "Helped freshmen students improve their understandings",
         "Received excellent feedback from students",
+      ],
+    },
+    {
+      title: "Part-time Video Editor",
+      company: "Blox Labs Media",
+      period: "Part-time, December 2022 - July 2025",
+      description:
+        "As a part-time Video Editor at Blox Labs, I edited and produced videos that matched the client's vision and brand. I added effects, transitions, and graphics to make the videos more engaging. I worked with the team on ideas, managed deadlines, and turned raw footage into polished, professional content.",
+      technologies: ["Adobe After Effects", "Adobe Photoshop", "AI Text-to-Speech", "Discord", "Zoom"],
+      achievements: [
+        "Introduced creative use of AI text-to-speech, which reduced production turnaround by 40%",
+        "Successfully produced over 50 client videos, improving audience engagement and helping Blox Labs deliver consistent, brand-aligned content on time.",
       ],
     },
     {
@@ -55,6 +56,51 @@ export function ExperienceSection() {
         "Assisted in coordinating faculty schedules and department events efficiently",
         "Helped streamline appointment scheduling and record management",
         "Received consistent positive feedback from students and faculty for reliability and professionalism"
+      ],
+    },
+    {
+      title: "Graphic Designer (Contract)",
+      company: "Revest360",
+      period: "September 2022 - December 2022",
+      description:
+        "Created visual assets and marketing materials using Canva and Adobe Photoshop. Customized templates based on client branding and project requirements, ensuring designs matched the intended message, tone, and audience. Collaborated with the client to refine layouts, color themes, and typography choices to produce consistent and high-impact designs across digital platforms.",
+      technologies: ["Canva", "Adobe Photoshop", "Basic Photo Retouching", "Social Media Graphics"],
+      achievements: [
+        "Produced high-quality marketing materials tailored to client specifications, resulting in consistent and on-brand visuals.",
+        "Customized Canva templates to match client campaigns, improving visual cohesion across social media and promotional content.",
+        "Enhanced images through photo editing and retouching using Adobe Photoshop to improve clarity and presentation.",
+        "Delivered all design tasks within tight deadlines, supporting the client’s content schedule and promotional timelines.",
+        "Collaborated closely with the client to refine design direction, ensuring high satisfaction and successful project outcomes."
+      ],
+    },
+    {
+      title: "Administrative Assistant and Sales Person",
+      company: "Conexus Tech and Arts Center (Computer and Repair Shop)",
+      period: "December 2021 to July 2022",
+      description:
+        "I assisted customers with a variety of tech-related issues, including troubleshooting computers, printers, and laptops, both in person and through remote consultations. I also handled online inquiries, ensuring quick, clear, and helpful responses.Alongside technical support, I managed several administrative tasks such as tracking inventory, preparing invoices for tax and sales records, and maintaining organized daily documentation to support smooth business operations. I also took charge of the business’ social media pages, creating captions, uploading content, and keeping posts consistent and engaging. To help increase visibility and attract new customers, I participated in marketing efforts, including handing out flyers and speaking with people in the community. Overall, I supported the business across technical, administrative, online communication, and promotional activities — ensuring customers received reliable service and the business stayed organized and visible.",
+      technologies: ["Microsoft Office Suite", "Google Workspace", "Customer Service Communication", "Social Media Management", "Basic Computer Troubleshooting", "Remote Support Tools", "Canva", "Inventory Management", "Manual Point of Sale (POS)"],
+      achievements: [
+        "Provided successful troubleshooting and tech support for 100+ customer devices, both in-person and remotely.",
+        "Improved customer response time by efficiently handling online inquiries and remote consultations.",
+        "Maintained organized inventory and daily sales documentation, helping streamline business operations.",
+        "Created consistent social media content that increased engagement and helped attract new customers.",
+        "Supported marketing efforts through flyer distribution and community outreach, contributing to higher store visibility.",
+        "Ensured accurate invoice preparation for tax and sales records, reducing errors and improving documentation processes."
+      ],
+    },
+    {
+      title: "Data Annotator (Freelance)",
+      company: "Remotasks",
+      period: "April 2021 - December 2021",
+      description:
+        "Specialized in video and photo annotation tasks, including object labeling, frame-by-frame tagging, activity recognition, and scene categorization. Carefully tagged visual elements such as people, vehicles, objects, and environments to support computer vision model training. Followed strict quality guidelines to ensure accurate, consistent, and high-value annotations for machine learning datasets.",
+      technologies: ["Video Annotation Tools", "Image Labeling Platforms", "Quality Assurance for Visual Data", "Attention to Detail"],
+      achievements: [
+        "Labeled hundreds of frames for object recognition, tracking, and visual dataset training.",
+        "Maintained top-tier quality scores by consistently following annotation guidelines and visual standards.",
+        "Contributed to the improvement of computer vision models by delivering detailed and precise annotations.",
+        "Handled multiple project types such as object detection, action recognition, and environmental scene tagging."
       ],
     },
   ]
