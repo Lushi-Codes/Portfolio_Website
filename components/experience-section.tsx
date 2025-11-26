@@ -33,7 +33,7 @@ export function ExperienceSection() {
       ],
     },
     {
-      title: "Part-time Video Editor",
+      title: "Video Editor (Part-time)",
       company: "Blox Labs Media",
       period: "Part-time, December 2022 - July 2025",
       description:
@@ -74,7 +74,7 @@ export function ExperienceSection() {
       ],
     },
     {
-      title: "Administrative Assistant and Sales Person",
+      title: "Administrative Assistant and Sales Person (Contract)",
       company: "Conexus Tech and Arts Center (Computer and Repair Shop)",
       period: "December 2021 to July 2022",
       description:
