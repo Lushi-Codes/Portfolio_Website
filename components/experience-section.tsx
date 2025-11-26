@@ -26,7 +26,7 @@ export function ExperienceSection() {
       period: "August 2023 - May 2025",
       description:
         "Assisted students in programming courses such as Introduction to PHP, Java, and Algorithm Structures",
-      technologies: ["Java", "PHP", "Algorithm Structures", "Database (SQL)"],
+      technologies: ["Java", "PHP", "Data Structures", "Database (SQL)", "Algorithm"],
       achievements: [
         "Helped freshmen students improve their understandings",
         "Received excellent feedback from students",
