@@ -19,7 +19,7 @@ export function MediaSection() {
       stats: { projects: "100+", clients: "Multiple", improvement: "25% faster turnaround" },
       tools: ["Adobe After Effects", "Lightroom", "Photoshop", "Envato"],
       icon: Play,
-      driveUrl: "https://mega.nz/folder/QCAAAY7K#K-5KUS7Bu2UNjd_b6Q0zng", 
+      driveUrl: "https://mega.nz/folder/QCAAAY7K#K-5KUS7Bu2UNjd_b6Q0zng",
     },
     {
       title: "Client Video Productions",
@@ -78,6 +78,16 @@ export function MediaSection() {
             Professional video and photo editing work showcasing creativity, technical expertise, and attention to
             detail
           </p>
+          <div className="mt-6">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer"
+              onClick={() => window.open("https://lushi7129.wixsite.com/lushiportfolio", "_blank")}
+            >
+              <ExternalLink className="h-5 w-5 mr-2" />
+              View Full Media Portfolio
+            </Button>
+          </div>
         </div>
 
         {/* Key Achievements */}
