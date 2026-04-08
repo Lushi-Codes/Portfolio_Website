@@ -9,6 +9,20 @@ export function ExperienceSection() {
 
   const experiences = [
     {
+      title: "Data Entry Officer (Contract)",
+      company: "Greater Western Water",
+      period: "March 2026 - June 2026",
+      description: "Handled data entry tasks at Greater Western Water, ensuring information was entered accurately and kept up to date. Reviewed and scanned documents to extract key details, particularly for ownership changes, while maintaining clear and organised records. Quickly adapted to new systems and processes, demonstrating strong attention to detail and efficiency in a fast-paced environment.",
+      technologies: ["Microsoft Teams", "Microsoft Outlook", "GWW System (Oracle)"],
+      achievements: [
+        "Demonstrated fast and accurate document reading and data extraction",
+        "Quickly learned and adapted to new systems and workflows",
+        "Developed strong typing speed while maintaining high accuracy",
+        "Consistently met deadlines in a fast-paced data entry environment",
+        "Maintained a high level of attention to detail across all tasks",
+      ],
+    },
+    {
       title: "Video and Photo Editor",
       company: "Dronegenuity",
       period: "February 2025 - November 2025",
@@ -19,7 +33,7 @@ export function ExperienceSection() {
         "Successfully produced over 100+ client videos, improving audience engagement and helping Dronegenuity deliver consistent, brand-aligned content on time.",
       ],
     },
-  
+
     {
       title: "Teaching Assistant",
       company: "University of Baguio",
