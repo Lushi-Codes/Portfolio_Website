@@ -10,13 +10,14 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: "AI-Powered ebook Library System (2025)",
+      title: "Medlib Medical Database and Interface (2026) - collab with Moxie Sutton",
       description:
-        "EBOOK-LIB is a full-stack web application built with Next.js, TypeScript, and Tailwind CSS that serves as a digital bookstore and reading hub.Users can browse, search, purchase, and download ebooks — or access free titles instantly — while AI helps them discover new books through smart recommendations and conversational search.",
-      image: "/ebook.png",
-      technologies: ["Next.js", "TypeScript", "Neon Database (PostgresSQL)", "Github", "Tailwind CSS", "Prisma ORM", "Visual Studio Code", "OpenAI API"],
+        "Medlib, or medical library, is a structured interface for pharmacy techs to catagorize, facilitate and process the sale and supply of medications for clients behind the counter. Goals for this project include a functional database of common medications, a functional token authentication system for employees and administators, integration with pricing to prepare for POS interfacing as well as a functional and clean UX for employees to seamlessly navigate with minimal training. Hosting and integration with storefronts needs to be easily accessible with third party hosting services such as AWS in order to be accessible to businesses looking to partner with these major providers." +
+        "\nCurrently in the frameworking stage of development.",
+      image: "/MedLib.png",
+      technologies: ["JavaScript", "SQLite 3", "HTML5", "GitHub", "CSS", "Visual Studio Code"],
       liveUrl:
-        "#",
+        "https://github.com/Moxxiiiiiii/medlib.git",
     },
     {
       title: "DIWA: Divine Wars. A Real-time Strategy Game Based on Phillippine Mythology (2025)",

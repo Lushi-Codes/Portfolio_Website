@@ -15,11 +15,11 @@ export function ExperienceSection() {
       description: "Handled data entry tasks at Greater Western Water, ensuring information was entered accurately and kept up to date. Reviewed and scanned documents to extract key details, particularly for ownership changes, while maintaining clear and organised records. Quickly adapted to new systems and processes, demonstrating strong attention to detail and efficiency in a fast-paced environment.",
       technologies: ["Microsoft Teams", "Microsoft Outlook", "GWW System (Oracle)"],
       achievements: [
-        "Demonstrated fast and accurate document reading and data extraction",
+        "Demonstrated fast and accurate document reading and data extraction while maintaining high accuracy",
         "Quickly learned and adapted to new systems and workflows",
-        "Developed strong typing speed while maintaining high accuracy",
         "Consistently met deadlines in a fast-paced data entry environment",
         "Maintained a high level of attention to detail across all tasks",
+        "Collaborated effectively with team members and internal stakeholders to resolve data discrepancies promptly",
       ],
     },
     {
@@ -88,9 +88,9 @@ export function ExperienceSection() {
       ],
     },
     {
-      title: "Administrative Assistant and Sales Person (Contract)",
+      title: "Administrative Assistant and IT Support Assistant (Contract)",
       company: "Conexus Tech and Arts Center (Computer and Repair Shop)",
-      period: "December 2021 to July 2022",
+      period: "December 2021 to November 2022",
       description:
         "I assisted customers with a variety of tech-related issues, including troubleshooting computers, printers, and laptops, both in person and through remote consultations. I also handled online inquiries, ensuring quick, clear, and helpful responses.Alongside technical support, I managed several administrative tasks such as tracking inventory, preparing invoices for tax and sales records, and maintaining organized daily documentation to support smooth business operations. I also took charge of the business’ social media pages, creating captions, uploading content, and keeping posts consistent and engaging. To help increase visibility and attract new customers, I participated in marketing efforts, including handing out flyers and speaking with people in the community. Overall, I supported the business across technical, administrative, online communication, and promotional activities — ensuring customers received reliable service and the business stayed organized and visible.",
       technologies: ["Microsoft Office Suite", "Google Workspace", "Customer Service Communication", "Social Media Management", "Basic Computer Troubleshooting", "Remote Support Tools", "Canva", "Inventory Management", "Manual Point of Sale (POS)"],

@@ -183,24 +183,27 @@ export function generateResumeHTML(): string {
             ${resumeData.personalInfo.location}
         </div>
         <div class="contact-info">
-            ${resumeData.personalInfo.phone} | ${resumeData.personalInfo.email} | ${resumeData.personalInfo.portfolio}
+            ${resumeData.personalInfo.phone} | ${resumeData.personalInfo.email}
+        </div>
+        <div class="contact-info">
+            ${resumeData.personalInfo.portfolio} | ${resumeData.personalInfo.linkedin}
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">About</div>
+        <div class="section-title">Professional Summary</div>
         <div class="about-text">${resumeData.about}</div>
     </div>
 
     <div class="section">
-        <div class="section-title">Area of Expertise</div>
+        <div class="section-title">Technical Skills</div>
         <div class="expertise-list">
             ${resumeData.areaOfExpertise.map((item) => `<div class="expertise-item">${item}</div>`).join("")}
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Key Achievements</div>
+        <div class="section-title">Technical Projects</div>
         <div class="achievement-list">
             ${resumeData.keyAchievements.map((achievement) => `<div class="achievement-item">${achievement}</div>`).join("")}
         </div>
@@ -214,7 +217,7 @@ export function generateResumeHTML(): string {
             <div class="experience-item">
                 <div class="company">${exp.company}</div>
                 <div class="job-title">${exp.position}</div>
-                <div class="duration">${exp.type} | ${exp.duration}</div>
+                <div class="duration">${exp.type} | ${exp.location} | ${exp.duration}</div>
                 <div class="description">${exp.description}</div>
             </div>
         `,
@@ -229,7 +232,7 @@ export function generateResumeHTML(): string {
             (edu) => `
             <div class="education-item">
                 <div class="job-title">${edu.degree}</div>
-                <div class="company">${edu.institution}</div>
+                <div class="company">${edu.institution} | ${edu.location}</div>
                 <div class="duration">${edu.duration}</div>
                 ${edu.details ? `<div class="details">${edu.details}</div>` : ""}
             </div>
@@ -239,63 +242,42 @@ export function generateResumeHTML(): string {
     </div>
 
     <div class="section">
-        <div class="section-title">Additional Information</div>
-        
-        <div style="margin-bottom: 20px;">
-            <div style="font-weight: bold; color: #1e40af; margin-bottom: 10px;">Languages</div>
-            <div class="language-list">
-                ${resumeData.languages.map((lang) => `<div class="language-item">${lang}</div>`).join("")}
-            </div>
-        </div>
-
-        <div style="margin-bottom: 20px;">
-            <div style="font-weight: bold; color: #1e40af; margin-bottom: 10px;">Certifications</div>
-            <div class="certification-list">
-                ${resumeData.certifications.map((cert) => `<div class="certification-item">${cert}</div>`).join("")}
-            </div>
-        </div>
-
-        <div>
-            <div style="font-weight: bold; color: #1e40af; margin-bottom: 10px;">Extra Curricular Activities</div>
-            ${resumeData.extracurricular
-              .map(
-                (ext) => `
-                <div class="extracurricular-item">
-                    <div class="job-title">${ext.role}</div>
-                    <div class="company">${ext.organization}</div>
-                    <div class="duration">${ext.duration}</div>
-                </div>
-            `,
-              )
-              .join("")}
-        </div>
-    </div>
-
-    <div class="section">
         <div class="section-title">Skills</div>
         <div class="skills-grid">
             <div class="skill-category">
-                <div class="skill-category-title">Video & Photo Editing</div>
+                <div class="skill-category-title">Programming Languages</div>
                 <ul class="skill-list">
-                    ${resumeData.skills.videoPhotoEditing.map((skill) => `<li>${skill}</li>`).join("")}
+                    ${resumeData.skills.programmingLanguages.map((skill) => `<li>${skill}</li>`).join("")}
                 </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Frontend</div>
+                <div class="skill-category-title">Web Technologies</div>
                 <ul class="skill-list">
-                    ${resumeData.skills.frontend.map((skill) => `<li>${skill}</li>`).join("")}
+                    ${resumeData.skills.webTechnologies.map((skill) => `<li>${skill}</li>`).join("")}
                 </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Backend</div>
+                <div class="skill-category-title">Databases</div>
                 <ul class="skill-list">
-                    ${resumeData.skills.backend.map((skill) => `<li>${skill}</li>`).join("")}
+                    ${resumeData.skills.databases.map((skill) => `<li>${skill}</li>`).join("")}
                 </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-category-title">Others</div>
+                <div class="skill-category-title">Tools</div>
                 <ul class="skill-list">
-                    ${resumeData.skills.others.map((skill) => `<li>${skill}</li>`).join("")}
+                    ${resumeData.skills.tools.map((skill) => `<li>${skill}</li>`).join("")}
+                </ul>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">Software Development</div>
+                <ul class="skill-list">
+                    ${resumeData.skills.softwareDevelopment.map((skill) => `<li>${skill}</li>`).join("")}
+                </ul>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category-title">IT Support</div>
+                <ul class="skill-list">
+                    ${resumeData.skills.itSupport.map((skill) => `<li>${skill}</li>`).join("")}
                 </ul>
             </div>
         </div>
