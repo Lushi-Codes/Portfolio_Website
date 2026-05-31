@@ -89,7 +89,7 @@ export function HeroSection() {
             variant="ghost"
             size="icon"
             className="text-[var(--color-hero-text-muted)] hover:text-[var(--color-hero-text)]"
-            onClick={() => window.open("https://github.com/Lushi-Codes/Portfolio", "_blank")}
+            onClick={() => window.open("https://github.com/Lushi-Codes?tab=repositories", "_blank")}
           >
             <Github className="h-6 w-6" />
           </Button>
