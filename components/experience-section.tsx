@@ -9,15 +9,25 @@ export function ExperienceSection() {
 
   const experiences = [
     {
+      title: "Data Systems Administrator",
+      company: "Salesian College Sunbury",
+      period: "October 2026 - Present",
+      description: "",
+      technologies: ["Microsoft 365", "Schoolbox (LMS)"],
+      achievements: [
+        "Will update soon..."
+      ],
+    },
+    {
       title: "Data Entry Officer (Contract)",
       company: "Greater Western Water",
-      period: "March 2026 - June 2026",
+      period: "March 2026 - October 2026",
       description: "Handled data entry tasks at Greater Western Water, ensuring information was entered accurately and kept up to date. Reviewed and scanned documents to extract key details, particularly for ownership changes, while maintaining clear and organised records. Quickly adapted to new systems and processes, demonstrating strong attention to detail and efficiency in a fast-paced environment.",
       technologies: ["Microsoft Teams", "Microsoft Outlook", "GWW System (Oracle)"],
       achievements: [
         "Demonstrated fast and accurate document reading and data extraction while maintaining high accuracy",
-        "Quickly learned and adapted to new systems and workflows",
-        "Consistently met deadlines in a fast-paced data entry environment",
+        "Helped out colleagues learn how the system works",
+        "Fixed delayed bills and problems on customers' accounts",
         "Maintained a high level of attention to detail across all tasks",
         "Collaborated effectively with team members and internal stakeholders to resolve data discrepancies promptly",
       ],
